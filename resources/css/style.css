@@ -2,6 +2,8 @@
 Orange color: #e67e22
 
 */
+
+
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -31,9 +33,11 @@ body {
     height: 0;
     visibility: hidden;
 }
+
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
+
 
 .row {
     max-width: 1140px;
@@ -48,17 +52,7 @@ section {
     padding: 1%;
 }
 
-/* h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 240%;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    text-transform: uppercase;
-} */
-
+/* ----- HEADINGS ----- */
 h1,
 h2,
 h3 {
@@ -151,13 +145,10 @@ a:active {
     border-bottom: 1px solid transparent;
 }
 
-/* ----------------------------------------------- */
-/* BUTTONS */
-/* ----------------------------------------------- */
-
+/* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
-input[type=submit]  {
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -169,7 +160,7 @@ input[type=submit]  {
 
 .btn-full:link,
 .btn-full:visited,
-input[type=submit]  {
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -199,6 +190,7 @@ input[type=submit]:active {
     border: 1px solid #cf6d17;
     color: #fff;
 }
+
 
 /* ----------------------------------------------- */
 /* HEADER */
@@ -267,6 +259,43 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
 /* ----------------------------------------------- */
 /* FEATURES */
 /* ----------------------------------------------- */
@@ -274,6 +303,7 @@ header {
 .section-features .long-copy {
     margin-bottom: 30px;
 }
+
 
 /* ----------------------------------------------- */
 /* MEALS */
@@ -318,6 +348,8 @@ header {
     -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
+
+
 
 /* ----------------------------------------------- */
 /* HOW IT WORKS SECTION */
@@ -380,6 +412,7 @@ header {
     margin-right: 10px;
 }
 
+
 /* ----------------------------------------------- */
 /* CITIES */
 /* ----------------------------------------------- */
@@ -393,6 +426,7 @@ header {
 .city-feature {
     margin-bottom: 5px;
 }
+
 
 /* ----------------------------------------------- */
 /* TESTIMONIALS */
@@ -435,6 +469,7 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
 
 /* ----------------------------------------------- */
 /* SIGN UP */
@@ -493,6 +528,7 @@ cite img {
     padding: 5px 0;
 }
 
+
 /* ----------------------------------------------- */
 /* FORM */
 /* ----------------------------------------------- */
@@ -521,6 +557,7 @@ input[type=checkbox] {
 }
 
 *:focus {outline: none;}
+
 
 /* ----------------------------------------------- */
 /* FOOTER */
@@ -603,6 +640,33 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+
+
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
 
 
